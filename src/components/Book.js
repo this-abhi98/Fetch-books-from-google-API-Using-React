@@ -8,12 +8,10 @@ function Book(props) {
 
   return (
     <>
-      
-      
-        <div className="container">
+        <div className="container " >
           <div className="row">
             <div className="col-12 mt-3">
-              <div className="card">
+              <div className="card contain">
                 <div className="card-horizontal">
                   <div className="img-square-wrapper">
                     <img  src={`${props.item.volumeInfo.imageLinks.smallThumbnail}`} alt="" />
@@ -22,8 +20,9 @@ function Book(props) {
                   <div className="card-body">
                     <h4 className="card-title">{props.item.volumeInfo.title}</h4>
                     <p className="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
+
+                    {props.item.volumeInfo.subtitle}
+                      
                     </p>
                   </div>
                   </Link>

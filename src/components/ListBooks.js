@@ -7,7 +7,6 @@ export default function ListBooks() {
 
   useEffect(() => {
     axios
-
       .get("https://www.googleapis.com/books/v1/volumes?filter=free-ebooks&q=a")
       .then((response) => {
         setBookList(response.data.items);

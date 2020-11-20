@@ -7,7 +7,7 @@ function book(props) {
 
   return (
     <>
-      <div className="card cont">
+      <div className="card cont mydiv" >
         <img
           className="card-img-top"
           src={`${item.volumeInfo.imageLinks.thumbnail}`}
@@ -19,6 +19,9 @@ function book(props) {
           {item.volumeInfo.subtitle}
           </p>
         </div>
+        <div className="card-footer">
+                  <small className="text-muted">Author: {item.volumeInfo.authors[0]}</small>
+                </div>
       </div>
     </>
   );

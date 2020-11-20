@@ -1,4 +1,25 @@
-.card-horizontal {
-    display: flex;
-    flex: 1 1 auto;
+
+@media only screen and (min-width: 600px) {
+    .card-horizontal {
+        display: flex;
+        flex: 1 1 auto;
+    }
+}
+@media only screen and (max-width: 600px) {
+
+    .card-title{
+        size: 2rem;
+
+    }
+    .img-square-wrapper{
+        width: 20%;
+        height: auto;
+        padding: 5px 0;
+    }
+}
+
+
+.contain{
+    background-color: #f4f4f2;
+    color: black;
 }
