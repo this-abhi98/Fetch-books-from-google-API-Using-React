@@ -11,10 +11,13 @@
         size: 2rem;
 
     }
-    .img-square-wrapper{
-        width: 20%;
-        height: auto;
+    .img-square-wrapper img{
+        display: block;
+        width: 80%;
+        height: 12rem;
         padding: 5px 0;
+        text-align: center;
+        margin: auto;
     }
 }
 
